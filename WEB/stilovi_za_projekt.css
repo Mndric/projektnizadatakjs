@@ -1,0 +1,560 @@
+/* generalne postavke za sve elemente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* osnovni stilovi za tijelo stranice */
+body {
+    font-family: "Times New Roman";
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+}
+
+/* stilovi za navigaciju */
+#navigacija {
+    background-color: white;
+    color: red;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+/* stilovi za navigacijski header */
+#navigacija header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* stil za logo u navigaciji */
+.logo {
+    width: auto;
+    height: auto;
+}
+
+/* stil za navigacijske linkove */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: normal;
+}
+
+/* stil za pojedinačne linkove u navigaciji */
+.nav a {
+    margin: 15px;
+    font-size: large;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* hover efekt za navigacijske linkove */
+.nav a:hover {
+    color: white;
+    background-color: #dc1414;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* stil za sliku u navigaciji */
+#navigacija img {
+    display: block;
+    width: auto;
+    height: 80px;
+    float: left;
+}
+
+/* stil za tekst u navigaciji */
+#navigacija p {
+    font-family: "Brush Script MT";
+    text-align: right;
+    font-size: 50px;
+}
+
+/* animacija za promjenu boje pozadine */
+@keyframes boja {
+    from {background-color: #dc1414;}
+    to {background-color: #d3a794;}
+}
+
+/* stil za sekcije */
+section {
+    background-color: #d3a794;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+/* stil za naslov u sekciji 'Pocetna' */
+.pocetna h1{
+    font-weight: bold;
+    font-size: 80px;
+    font-family: "Brush Script MT";
+    color: #dc1414;;
+    animation-name: boja;
+    animation-duration:4s;
+}
+
+/* animacija za ulaz slike */
+@keyframes ulaz {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* stil za slike na stranici 'Pocetna' */
+.pocetna img{
+    height: auto;
+    width: 500px;
+    max-width: 350px;
+    animation-name: ulaz;
+    animation-duration: 12s;
+    animation-fill-mode: forwards;
+}
+
+/* uvodna sekcija */
+.uvod{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+/* stil za tekst u uvodu */
+.pocetak{
+    max-width: 600px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* stil za sekciju sa slikama */
+.slike-dvije{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* stil za sekciju 'O nama' */
+.onama h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: #dc1414;
+    font-family: "Brush Script MT";
+}
+
+/* stil za paragrafe u sekciji 'O nama' */
+.onama p{
+    font-size: 18px;
+}
+
+/* stil za listu u sekciji 'O nama' */
+.onama ul {
+    list-style: square inside;
+    margin-top: 10px;
+}
+
+/* stil za stavke liste u 'O nama' */
+.onama ul li{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* stil za slike u sekciji 'O nama' */
+.onama img{
+    display: block;
+    margin: 30px;
+    height: 350px;
+    width: 1200px;
+    max-width: 700px;
+}
+
+/* stil za podnaslove u 'O nama' */
+.onamadva h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #dc1414;
+}
+
+/* stil za podnaslove u 'O nama' */
+.onamadva h3{
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #dc1414;
+}
+
+/* stil za tekst u 'O nama' */
+.onamadva p{
+    font-family: "Times New Roman";
+}
+
+/* stil za centriranje slika u sekciji */
+.slika-centar{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* stil za slike u centru */
+.slika-centar img{
+    height: auto;
+    max-width: 700px;
+}
+
+/* naslov u sekciji s tablicom */
+.tabela h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: #dc1414;
+    display: flex;
+    justify-content: center;
+    font-family: "Brush Script MT";
+}
+
+/* stil za samu tablicu */
+.tabela table {
+    width: 100%;
+    border-collapse: initial;
+    margin-top: 10px;
+    font-family: "Arial Black";
+    font-size: 15px;
+}
+
+/* naslovi tablice */
+.tabela th{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    color: #dc1414;
+}
+
+/* ćelije tablice */
+.tabela td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #bf7758;
+}
+
+/* naslov sekcije 'Kontakt' */
+.kontakt h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: #dc1414;
+    display: flex;
+    justify-content: center;
+    font-family: "Brush Script MT";
+}
+
+/* paragrafi u kontakt sekciji */
+.kontakt p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* linkovi u kontakt sekciji */
+.kontakt a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #dc1414;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* forma u kontakt sekciji */
+.kontakt form {
+    margin-top: 10px;
+}
+
+/* input polja u kontakt formi */
+.kontakt input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin: 1px 5px;
+    border: 1px solid #bf7758;
+    border-radius: 4px;
+}
+
+/* input polja u kontakt formi */
+.kontakt input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 1px 5px;
+    border: 1px solid #bf7758;
+    border-radius: 4px;
+}
+
+/* Gumb za slanje forme */
+.kontakt input[type="submit"] {
+    background-color: #dc1414;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* hover efekt za gumb */
+.kontakt input[type="submit"]:hover {
+    background-color: red;
+}
+
+/* footer sekcija stranice */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dc1414;
+    color: white;
+    border-radius: 5px;
+}
+.footer {
+    background-color: white;
+    color: red;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* društvene mreže unutar footera */
+.footer ul.drustvene {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* linkovi društvenih mreža */
+.footer ul.drustvene li a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover efekt za linkove društvenih mreža */
+.footer ul.drustvene li a:hover {
+    color: #d3a794;
+}
+
+/* tekst na dnu footera */
+.footer p {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/* naslov sekcije 'Usluge' */
+.usluge h1{
+    font-weight: bold;
+    font-size: 70px;
+    color: #dc1414;
+    display: flex;
+    justify-content: center;
+    font-family: "Brush Script MT";
+}
+
+/* stil za podnaslove u 'Usluge' */
+.usluge h3{
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #dc1414;
+}
+
+/* paragrafi u usluge sekciji */
+.kontakt p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* responsivnost – za uređaje do širine 768px */
+@media (max-width: 768px) {
+    #navigacija header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    #navigacija p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .uvod {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pocetak {
+        font-size: 18px;
+    }
+
+    .pocetna h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .onama h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .tabela h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .kontakt h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .pocetna img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .onama img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .onamadva img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slike-dvije {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .onamadva h2 {
+        font-size: 30px;
+    }
+
+    .onamadva h3 {
+        font-size: 18px;
+    }
+
+    .kontakt p{
+        font-size: 16px;
+    }
+    .kontakt a {
+        font-size: 16px;
+    }
+
+    .tabela table {
+        font-size: 13px;
+    }
+
+    .tabela th {
+        font-size: 14px;
+    }
+
+    .footer ul.drustvene {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+    .usluge h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .usluge h3 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .usluge p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+/* dodani css*/
+.casopis {
+    background-color: #d3a794;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: "Arial Black";
+}
+
+.casopis table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.casopis th {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    color: #dc1414;
+    font-size: 16px;
+}
+
+.casopis input[type="text"],
+.casopis select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bf7758;
+    border-radius: 4px;
+}
+
+.casopis input[type="checkbox"],
+.casopis input[type="radio"] {
+    margin-right: 5px;
+}
+
+.casopis .btn_cls {
+    background-color: #dc1414;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.casopis .btn_cls:hover {
+    background-color: red;
+}

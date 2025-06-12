@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt</title>
+  <link href="stilovi_za_projekt.css" rel="stylesheet">
+  <script type="text/javascript" src="java.js"></script>
+</head>
+<body>
+<div id="navigacija">
+  <header>
+    <div class="logo">
+      <p><img src="logo.png" alt="Create by M">Create by M</p>
+    </div>
+    <div class="nav">
+      <nav>
+        <a href="pocetna.html">Početna stranica</a>
+        <a href="onama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="cjenik.html">Cjenik</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+
+  </header>
+</div>
+<section class="kontakt">
+  <h1>Kontakt</h1>
+  <p>Zadar</p>
+  <p>+385 098 168 8452</p>
+  <p>createbym@gmail.com</p>
+  <p>Ulica dr Franje Tuđmana 24D</p>
+  <p>Zadar 23 000</p>
+  <p>Hrvatska</p>
+  <a href="https://www.google.pl/maps/place/Ul.+dr.+Franje+Tu%C4%91mana+24+d,+23000,+Zadar/@44.1130643,15.2354408,17z/data=!3m1!4b1!4m6!3m5!1s0x4761fa63724430e3:0xfb334d1114b5b6df!8m2!3d44.1130605!4d15.2380157!16s%2Fg%2F11y320z20g?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"> Vidi gdje smo na mapi.</a>
+  <p>Pretplatite se na naš časopis kako bi imali uvid u najnovije obavijesti.</p>
+</section>
+
+<div class="casopis">
+  <table class="tabela">
+    <tr>
+      <th><label>Ime i prezime: </label></th>
+      <th><input type="text" value="" id="name"></th>
+    </tr>
+    <tr>
+      <th><label>E-mail: </label></th>
+      <th><input type="text" value="" id="mail"></th>
+    </tr>
+    <tr>
+      <th style="text-align: left">Odaberi kako plaćaš pretplatu:</th>
+      <th>
+        <select class="choices" title="placanje" id="placanje">
+          <option value="none" selected disabled>Plaćanje pretplate...</option>
+          <option value="Tjedno">Tjedno</option>
+          <option value="Mjesečno">Mjesečno</option>
+          <option value="Polugodišnje">Polugodišnje</option>
+          <option value="Godišnje">Godišnje</option>
+        </select>
+      </th>
+    </tr>
+    <tr class="empty_row"></tr>
+    <tr>
+      <th></th><th><label> <input name="Vrsta časopisa" type="checkbox" id="ch1" value="Inovacije">Inovacije</label></th>
+    </tr>
+    <tr>
+      <th></th><th><label> <input name="Vrsta časopisa" type="checkbox" id="ch2" value="Karijera">Karijera</label></th>
+    </tr>
+    <tr>
+      <th></th><th><label> <input name="Vrsta časopisa" type="checkbox" id="ch3" value="Partneri">Partneri</label></th>
+    </tr>
+    <tr>
+      <th><label>Odaberi vrstu časopisa:</label></th><th></th>
+    </tr>
+    <tr>
+      <th></th><th><label> <input name="service" id="rad1" type="radio"  value="Silver" checked>Silver</label></th>
+    </tr>
+    <tr>
+      <th></th><th><label> <input name="service" id="rad2" type="radio"  value="Gold">Gold</label></th>
+    </tr>
+    <tr class="empty_row"></tr>
+    <tr>
+      <th></th><th><button class="btn_cls" id="submit_btn" onclick="submit_data()">Pošalji</button></th>
+    </tr>
+  </table>
+</div>
+<div class="footer">
+  <footer>
+  <ul class="drustvene">
+    <li><a href="https://www.facebook.com/profile.php?id=61575607081901" target="_blank" rel="nofollow">Facebook</a></li>
+    <li><a href="https://www.instagram.com/marija.andric379/" target="_blank" rel="nofollow">Instagram</a></li>
+    <li>+385 098 168 8452</li>
+    <li>createbym@gmail.com</li>
+  </ul>
+  <p>&copy; 2025 Create by M</p>
+  </footer>
+</div>
+</body>
+</html>

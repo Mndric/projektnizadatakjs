@@ -5,7 +5,7 @@
 
 # Osnovne smjernice
 ---
-![info](https://img.shields.io/badge/student-info-orange) **Vaše ime i prezime:** ***Obavezno unijeti***
+![info](https://img.shields.io/badge/student-info-orange) **Vaše ime i prezime:** Marija Andrić ***Obavezno unijeti***
 
 
  **NAPOMENA:** Repozitorij s rješenjima bez upisanog imena i prezimena neće se razmatrati!
